@@ -107,17 +107,19 @@
           <h2>Contact</h2>
           <div class="contaner-cont">
             <div class="form">
-              <form action="https://formsubmit.co/elrosyomair@gmail.com" method="post">
-              <input type="hidden" name="_subject" value="New Email!"  >
-              <input type="hidden" name="_captcha" value="false"   >
-                <input type="text" name="" value="" placeholder="Your Name" required="required" >
-                <br>
-                <input type="email" name="" value="" placeholder="Your E-mail" required="required" >
-                <br>
-                <input type="text" name="" value="" placeholder="Your Message" class="message" required="required" >
-                <br>
-                <input type="submit" name="" value="send">
-              </form>
+              
+              <form action="mailto:elrosyomair@gmail.com" method="post" enctype="text/plain">
+    <input type="hidden" name="_subject" value="New Email!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" value="" placeholder="Your Name" required="required">
+    <br>
+    <input type="email" name="email" value="" placeholder="Your E-mail" required="required">
+    <br>
+    <textarea name="message" placeholder="Your Message" required="required"></textarea>
+    <br>
+    <input type="submit" name="submit" value="send">
+</form>
+
             </div>
             <div class="inf-contact">
               <span>email</span><p>elrosyomair@gmail.com</P>
@@ -631,7 +633,8 @@
     text-align: center;
     padding-bottom: 12px;
     }
-    input {
+    
+      input , .message{
     border: 1px solid #aaa;
     border-radius: 4px;
     background-color: #004e700d;
@@ -640,7 +643,8 @@
     transition: 0.5s;
     outline: 2px solid #e3f2fd00;
     }
-    input:hover {
+    
+    input , .message:hover {
     outline: 3px solid #e3f2fdb5;
     }
     input[type="text"] {
@@ -651,9 +655,9 @@
     padding: 6px;
     width: 234px;
     }
-    input.message {
+    .message {
     width: 100%;
-    margin-top: 11px;
+    margin-top: 18px;
     padding-bottom: 60px;
     width: 234px;
     }
